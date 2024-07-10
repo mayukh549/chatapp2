@@ -1,0 +1,92 @@
+.list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.ug-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.ug-title {
+  flex-grow: 1;
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.sb-search {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-box {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.ug-list {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0.5rem 1rem;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #f7f7f7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list-item:hover {
+  background-color: #e0e0e0;
+}
+
+.con-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  background-color: #ddd;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.con-title {
+  font-size: 1rem;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark .ug-header, .dark .sb-search {
+  border-color: #555;
+}
+
+.dark .list-item {
+  background-color: #444;
+}
+
+.dark .list-item:hover {
+  background-color: #555;
+}
